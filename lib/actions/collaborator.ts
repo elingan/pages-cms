@@ -62,7 +62,7 @@ const handleAddCollaborator = async (prevState: any, formData: FormData) => {
 
 		Promise.resolve().then(async () => {
       const { data, error } = await resend.emails.send({
-				from: "Pages CMS <elingan@gmail.com>",
+				from: "Sumaq Sites <no_reply@sumaq.at>",
 				to: [email],
 				subject: `Join "${owner}/${repo}" on Pages CMS`,
 				react: InviteEmailTemplate({
